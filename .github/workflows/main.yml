@@ -29,8 +29,8 @@ jobs:
         with:
           analyse-all-code: 'true'
           pmd-version: 'latest'
-          file-path: './src'
-          rules-path: './rulesets/apex/quickstart.xml'
+          file-path: './src/classes'
+          rules-path: './ruleset.xml'
           error-rules: 'AvoidDirectAccessTriggerMap,AvoidDmlStatementsInLoops,AvoidHardcodingId'
           note-rules: 'ApexDoc'
       - name: Run PMD Analysis on Files Changed
@@ -39,8 +39,8 @@ jobs:
         uses: synergy-au/pmd-analyser-action@v2.1
         with:
           pmd-version: 'latest'
-          file-path: './src'
-          rules-path: './rulesets/apex/quickstart.xml'
+          file-path: './src/classes'
+          rules-path: './ruleset.xml'
           error-rules: 'AvoidDirectAccessTriggerMap,AvoidDmlStatementsInLoops,AvoidHardcodingId'
           note-rules: 'ApexDoc'
       - name: Codacy Analysis CLI
