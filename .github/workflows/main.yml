@@ -31,7 +31,6 @@ jobs:
           pmd-version: 'latest'
           file-path: './src'
           rules-path: './pmd-ruleset.xml'
-          error-rules: 'AvoidDirectAccessTriggerMap,AvoidDmlStatementsInLoops,AvoidHardcodingId'
           note-rules: 'ApexDoc'
       - name: Run PMD Analysis on Files Changed
         id: pmd-partial-analysis
