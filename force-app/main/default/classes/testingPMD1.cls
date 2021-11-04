@@ -5,6 +5,8 @@ public with sharing class testingPMDClass {
 
         String push;
         String directCommit;
+        
+        String Codacy;
 
     }
 }
