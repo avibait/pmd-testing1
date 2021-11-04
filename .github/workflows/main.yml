@@ -30,7 +30,7 @@ jobs:
           analyse-all-code: 'true'
           pmd-version: 'latest'
           file-path: './src'
-          rules-path: './pmd-ruleset.xml'
+          rules-path: './rulesets/apex/quickstart.xml'
           error-rules: 'AvoidDirectAccessTriggerMap,AvoidDmlStatementsInLoops,AvoidHardcodingId'
           note-rules: 'ApexDoc'
       - name: Run PMD Analysis on Files Changed
