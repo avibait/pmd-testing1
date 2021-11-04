@@ -2,15 +2,15 @@ name: PMD Static Code Analysis
 on:
   pull_request:
     branches:
-      - master
+      - main
   push:
     branches:
-      - master
+      - main
   workflow_dispatch:
 
 jobs:
   pmd-analyser-check:
-    name: PMD Static Code Analysis Job
+    name: PMD Static Code Analysis
     permissions:
       security-events: write
       actions: read
@@ -29,8 +29,8 @@ jobs:
         with:
           analyse-all-code: 'true'
           pmd-version: 'latest'
-          file-path: './src/classes'
-          rules-path: './ruleset.xml'
+          file-path: './src'
+          rules-path: './pmd-ruleset.xml'
           error-rules: 'AvoidDirectAccessTriggerMap,AvoidDmlStatementsInLoops,AvoidHardcodingId'
           note-rules: 'ApexDoc'
       - name: Run PMD Analysis on Files Changed
@@ -39,13 +39,14 @@ jobs:
         uses: synergy-au/pmd-analyser-action@v2.1
         with:
           pmd-version: 'latest'
-          file-path: './src/classes'
-          rules-path: './ruleset.xml'
+          file-path: './src'
+          rules-path: './pmd-ruleset.xml'
           error-rules: 'AvoidDirectAccessTriggerMap,AvoidDmlStatementsInLoops,AvoidHardcodingId'
           note-rules: 'ApexDoc'
-      - name: Codacy Analysis CLI
-        uses: codacy/codacy-analysis-cli-action@4.0.0
-
+      - name: Upload results to GitHub
+        uses: github/codeql-action/upload-sarif@v1
+        with:
+          sarif_file: pmd-output.sarif
       - name: No PMD Errors?
         run: |
           if ${{ steps.pmd-full-analysis.outputs.error-found }} ${{ steps.pmd-partial-analysis.outputs.error-found }}
