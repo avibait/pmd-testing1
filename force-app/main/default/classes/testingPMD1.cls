@@ -4,6 +4,7 @@ public with sharing class testingPMD1 {
         Boolean hi;
 
         String push;
+        String directCommit;
 
     }
 }
