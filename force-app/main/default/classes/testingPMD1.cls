@@ -4,6 +4,8 @@ public with sharing class testingPMD1 {
 
         Boolean hi;
         String str;
+        
+        String pull;
 
     }
 }
