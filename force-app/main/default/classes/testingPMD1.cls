@@ -1,6 +1,9 @@
 public with sharing class testingPMD1 {
     public void testingPMD1() {
         String s = 'hello';
-        boolean test;
+
+        Boolean hi;
+        String str;
+
     }
 }
