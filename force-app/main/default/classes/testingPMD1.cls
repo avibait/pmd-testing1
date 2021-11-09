@@ -10,6 +10,8 @@ public with sharing class testingPMDClass {
         
         List<Account> acc = [select name from account];
         List<contact> con = [select name from contact];
+        
+        List<user> tasks = [select name from user];
 
     }
 }
