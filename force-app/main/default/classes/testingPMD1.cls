@@ -5,6 +5,7 @@ public with sharing class testingPMDClass {
 
         List<Task> tasks = [select subject from task];
 
+        List<Account> acc =  [select name from account];
 
     }
 }
