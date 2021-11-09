@@ -4,11 +4,4 @@
 		My Custom rules
     </description>
 
-    <rule ref="category/apex/bestpractices.xml" />
-    <rule ref="category/apex/codestyle.xml" />
-    <rule ref="category/apex/design.xml" />
-    <rule ref="category/apex/documentation.xml" />
-    <rule ref="category/apex/errorprone.xml" />
-    <rule ref="category/apex/performance.xml" />
-    <rule ref="category/apex/security.xml" />
 </ruleset>
