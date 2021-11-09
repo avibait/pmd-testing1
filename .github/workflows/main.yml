@@ -26,7 +26,7 @@ jobs:
         id: pmd-partial-analysis
         uses: synergy-au/pmd-analyser-action@v2.1
         with:
-          file-diff-type: 'github'
+          file-diff-type: 'git'
           pmd-version: 'latest'
           file-path: 'force-app/main/default/classes'
           rules-path: 'rules.xml'
