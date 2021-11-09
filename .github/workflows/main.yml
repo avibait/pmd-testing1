@@ -30,7 +30,7 @@ jobs:
           analyse-all-code: 'true'
           pmd-version: 'latest'
           file-path: 'https://github.com/avibait/pmd-testing1/tree/master/force-app/main/default/classes'
-          rules-path: 'https://github.com/avibait/pmd-testing1/blob/master/rules.xml'
+          rules-path: 'https://github.com/avibait/pmd-testing1/blob/6a7c7434ca040d92835096cc04037bfe9feb1d47/rules.xml'
           error-rules: 'AvoidDirectAccessTriggerMap,AvoidDmlStatementsInLoops,AvoidHardcodingId'
           note-rules: 'ApexDoc'
       - name: Run PMD Analysis on Files Changed
