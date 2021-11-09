@@ -9,6 +9,7 @@ public with sharing class testingPMDClass {
         String Codacy;
         
         List<Account> acc = [select name from account];
+        List<contact> con = [select name from contact];
 
     }
 }
