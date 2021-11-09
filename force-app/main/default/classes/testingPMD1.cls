@@ -7,6 +7,8 @@ public with sharing class testingPMDClass {
         String directCommit;
         
         String Codacy;
+        
+        List<Account> acc = [select name from account];
 
     }
 }
