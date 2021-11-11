@@ -6,6 +6,8 @@ public with sharing class testingPMDClass {
         // from pull request
         String pull = 'pull';
         String pull2;
+        
+        Boolean testing = false;
 
   
     }
