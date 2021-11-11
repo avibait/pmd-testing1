@@ -36,7 +36,7 @@ jobs:
           sarif_file: pmd-output.sarif
       - name: No PMD Errors?
         run: |
-          if ${{ steps.pmd-full-analysis.outputs.error-found }} ${{ steps.pmd-partial-analysis.outputs.error-found }}
+          if ${{ steps.pmd-partial-analysis.outputs.error-found }}
           then
             exit 3
           fi
