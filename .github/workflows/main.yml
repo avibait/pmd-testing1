@@ -1,18 +1,12 @@
 name: PMD Static Code Analysis
 on:
-  pull_request:
-    branches:
-      - master
-  push:
-    branches:
-      - master
-  workflow_dispatch:
+  - pull_request
+  - workflow_dispatch
 
 jobs:
   pmd-analyser-check:
     name: PMD Static Code Analysis
     permissions:
-      security-events: write
       actions: read
       contents: read
     runs-on: ubuntu-latest
@@ -35,3 +29,4 @@ jobs:
         uses: github/codeql-action/upload-sarif@v1
         with:
           sarif_file: pmd-output.sarif
+
