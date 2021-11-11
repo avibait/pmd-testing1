@@ -7,7 +7,6 @@ public with sharing class testingPMDClass {
         String pull = 'pull';
         String pull2;
         
-        Boolean testing = false;
 
      
 
