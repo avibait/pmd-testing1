@@ -34,5 +34,11 @@ jobs:
         uses: github/codeql-action/upload-sarif@v1
         with:
           sarif_file: pmd-output.sarif
+      - name: No PMD Errors?
+        run: |
+          if ${{ steps.pmd-full-analysis.outputs.error-found }} ${{ steps.pmd-partial-analysis.outputs.error-found }}
+          then
+            exit 3
+          fi
  
 
