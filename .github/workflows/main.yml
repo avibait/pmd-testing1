@@ -1,8 +1,13 @@
 name: PMD Static Code Analysis
 on:
-  - pull_request
-  - workflow_dispatch
-
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  
 jobs:
   pmd-analyser-check:
     name: PMD Static Code Analysis
