@@ -8,8 +8,9 @@ public with sharing class testingPMDClass {
 //adding best practice error rule
         System.debug('Hey this code executed.');
         
-//adding security error rule
+//adding security error rule try 2
         HttpRequest req = new HttpRequest();
+        req.setEndpoint('http://google.com');
        
   
     }
