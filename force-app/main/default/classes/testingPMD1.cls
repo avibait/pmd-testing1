@@ -11,7 +11,7 @@ public with sharing class testingPMDClass {
 //adding security error rule try 2
         HttpRequest req = new HttpRequest();
         req.setEndpoint('http://google.com');
-// dismissed and marked all failed rules as wont't fix - will the check fail now?
+// dismissed and marked all failed rules as wont't fix - will the check fail now? try 2
        
   
     }
