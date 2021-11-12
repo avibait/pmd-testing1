@@ -7,6 +7,9 @@ public with sharing class testingPMDClass {
         
 //adding best practice error rule
         System.debug('Hey this code executed.');
+        
+//adding security error rule
+        HttpRequest req = new HttpRequest();
        
   
     }
