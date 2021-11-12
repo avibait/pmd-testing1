@@ -1,6 +1,8 @@
 public with sharing class testingPMDClass {
     public void testingPMDChanged() {
-//removed all code
+//added warning rule
+        String myString = 'hey';
+       
   
     }
 }
