@@ -21,7 +21,9 @@ jobs:
           rules-path: 'rules.xml'
           error-rules: >
            'ApexUnitTestClassShouldHaveAsserts,ApexUnitTestMethodShouldHaveIsTestAnnotation,ApexUnitTestShouldNotUseSeeAllDataTrue,
-            AvoidGlobalModifier,AvoidLogicInTrigger,DebugsShouldUseLoggingLevel,UnusedLocalVariable'
+            AvoidGlobalModifier,AvoidLogicInTrigger,DebugsShouldUseLoggingLevel,UnusedLocalVariable,ApexBadCrypto,ApexCRUDViolation,
+            ApexCSRF,ApexDangerousMethods,ApexInsecureEndpoint,ApexOpenRedirect,ApexSharingViolations,ApexSOQLInjection,
+            ApexSuggestUsingNamedCred,ApexXSSFromEscapeFalse,ApexXSSFromURLParam'
       - name: Upload results to GitHub
         uses: github/codeql-action/upload-sarif@v1
         with:
