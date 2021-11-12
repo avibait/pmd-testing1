@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           # Incremental diffs require fetch depth to be at 0 to grab the target branch
-          fetch-depth: '0'
+          fetch-depth: '1'
       - name: Run PMD Analysis on Files Changed
         id: pmd-partial-analysis
         uses: synergy-au/pmd-analyser-action@v2.1
