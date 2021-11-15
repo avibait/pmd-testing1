@@ -12,6 +12,9 @@ public with sharing class testingPMDClass {
         HttpRequest req = new HttpRequest();
         req.setEndpoint('http://google.com');
 // dismissed and marked all failed rules as wont't fix - will the check fail now? try 2
+        
+        // add unused local var - should be a warning
+        String noUsed = 'testing';
        
   
     }
