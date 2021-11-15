@@ -3,11 +3,19 @@
     <description>
 		My Custom rules
     </description>
-    <rule ref="category/apex/bestpractices.xml" />
+	
     <rule ref="category/apex/codestyle.xml" />
     <rule ref="category/apex/design.xml" />
     <rule ref="category/apex/documentation.xml" />
     <rule ref="category/apex/errorprone.xml" />
     <rule ref="category/apex/performance.xml" />
     <rule ref="category/apex/security.xml" />
+	
+    <rule ref="category/apex/bestpractices.xml/ApexUnitTestClassShouldHaveAsserts" />
+    <rule ref="category/apex/bestpractices.xml/ApexUnitTestMethodShouldHaveIsTestAnnotation" />
+    <rule ref="category/apex/bestpractices.xml/ApexUnitTestShouldNotUseSeeAllDataTrue" />
+    <rule ref="category/apex/bestpractices.xml/AvoidGlobalModifier" />
+    <rule ref="category/apex/bestpractices.xml/AvoidLogicInTrigger" />
+    <rule ref="category/apex/bestpractices.xml/UnusedLocalVariable" />
+
 </ruleset>
