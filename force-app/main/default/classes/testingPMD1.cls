@@ -15,6 +15,9 @@ public with sharing class testingPMDClass {
         
         // add unused local var - should be a warning
         String noUsed = 'testing';
+        
+        //new unused var
+        Integer i = 8;
        
   
     }
