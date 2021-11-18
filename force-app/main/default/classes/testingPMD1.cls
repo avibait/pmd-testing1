@@ -1,14 +1,24 @@
 public with sharing class testingPMDClass {
     public void testingPMDChanged() {
-        String s = 'hello';
-        Boolean hi = true;
+//added warning rule
+        String myString = 'hey';
+//added back error rule
+        List<Account> acc = [select name from account];
         
-        // from pull request
-        String pull = 'pull';
-        String pull2;
+//adding best practice error rule
+        System.debug('Hey this code executed.');
         
-        Boolean testing = false;
-
+//adding security error rule try 2
+        HttpRequest req = new HttpRequest();
+        req.setEndpoint('http://google.com');
+// dismissed and marked all failed rules as wont't fix - will the check fail now? try 2
+        
+        // add unused local var - should be a warning
+        String noUsed = 'testing';
+        
+        //new unused var
+        Integer i = 8;
+       
   
     }
 }
